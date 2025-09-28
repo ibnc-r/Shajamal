@@ -1,16 +1,14 @@
-
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Md Shajamal Mondal</title>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Md Shajamal Mondal - Editable</title>
 <style>
     body {
         background: linear-gradient(135deg, #a8edea, #fed6e3);
         font-family: Arial, sans-serif;
         text-align: center;
-        padding: 50px;
+        padding: 20px;
         animation: bg-animation 8s infinite alternate;
     }
     @keyframes bg-animation {
@@ -18,61 +16,214 @@
         100% {background: linear-gradient(135deg, #f6d365, #fda085);}
     }
     h1 {
-        font-size: 50px;
+        font-size: 36px;
         color: #333;
-        margin-bottom: 20px;
-        animation: fade-in 2s ease-in-out;
+        display: inline-block;
     }
-    h2 {
-        font-size: 24px;
-        color: #444;
-        margin-bottom: 40px;
-        animation: slide-down 2s ease-in-out;
+    h1 span {
+        display: inline-block;
+        animation: wave 1.5s infinite;
     }
-    p {
-        font-size: 18px;
-        color: #555;
-        margin: 10px 0;
-        opacity: 0;
-        animation: fade-up 2s forwards;
-    }
-    p:nth-child(3) {animation-delay: 1s;}
-    p:nth-child(4) {animation-delay: 1.5s;}
-    p:nth-child(5) {animation-delay: 2s;}
-    p:nth-child(6) {animation-delay: 2.5s;}
-    p:nth-child(7) {animation-delay: 3s;}
-    p:nth-child(8) {animation-delay: 3.5s;}
+    h1 span:nth-child(1) { animation-delay: 0s; }
+    h1 span:nth-child(2) { animation-delay: 0.1s; }
+    h1 span:nth-child(3) { animation-delay: 0.2s; }
+    h1 span:nth-child(4) { animation-delay: 0.3s; }
+    h1 span:nth-child(5) { animation-delay: 0.4s; }
+    h1 span:nth-child(6) { animation-delay: 0.5s; }
+    h1 span:nth-child(7) { animation-delay: 0.6s; }
+    h1 span:nth-child(8) { animation-delay: 0.7s; }
+    h1 span:nth-child(9) { animation-delay: 0.8s; }
+    h1 span:nth-child(10) { animation-delay: 0.9s; }
+    h1 span:nth-child(11) { animation-delay: 1s; }
+    h1 span:nth-child(12) { animation-delay: 1.1s; }
+    h1 span:nth-child(13) { animation-delay: 1.2s; }
+    h1 span:nth-child(14) { animation-delay: 1.3s; }
+    h1 span:nth-child(15) { animation-delay: 1.4s; }
+    h1 span:nth-child(16) { animation-delay: 1.5s; }
+    h1 span:nth-child(17) { animation-delay: 1.6s; }
+    h1 span:nth-child(18) { animation-delay: 1.7s; }@keyframes wave {
+    0%, 60%, 100% { transform: translateY(0); }
+    30% { transform: translateY(-15px); }
+}
 
-    @keyframes fade-in {
-        from {opacity: 0;}
-        to {opacity: 1;}
-    }
-    @keyframes slide-down {
-        from {transform: translateY(-50px); opacity: 0;}
-        to {transform: translateY(0); opacity: 1;}
-    }
-    @keyframes fade-up {
-        from {transform: translateY(50px); opacity: 0;}
-        to {transform: translateY(0); opacity: 1;}
-    }
-    a {
-        color: #0077cc;
-        text-decoration: none;
-        transition: 0.3s;
-    }
-    a:hover {
-        color: #ff4500;
-    }
+h2 {
+    font-size: 20px;
+    color: #444;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: fade-in 3s ease-in-out 1s forwards;
+}
+@keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.profile-img {
+    margin: 20px auto;
+    display: block;
+    max-width: 200px;
+    border-radius: 50%;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.info {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: left;
+}
+.folder {
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    text-align: left;
+}
+textarea, input {
+    width: 100%;
+    padding: 8px;
+    margin: 6px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+#gallery {background: linear-gradient(135deg, #6a11cb, #2575fc); color:#fff;}
+#about   {background: linear-gradient(135deg, #ff9a9e, #fecfef);}
+#projects{background: linear-gradient(135deg, #00c6ff, #0072ff); color:#fff;}
+#notes   {background: linear-gradient(135deg, #f7971e, #ffd200);}
+
+footer {
+    margin-top: 20px;
+    padding: 15px;
+    background: rgba(255,255,255,0.8);
+    border-radius: 10px;
+}
+footer a {
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #333;
+}
+footer a:hover { color: #0077cc; }
+
+button {
+    margin-top: 20px;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background: #0077cc;
+    color: #fff;
+    cursor: pointer;
+}
+button:hover { background: #005fa3; }
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+.gallery-container img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    transition: transform 0.4s, box-shadow 0.4s;
+}
+.gallery-container img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.5);
+}
+
 </style>
 </head>
 <body>
+<h1>
+<span>M</span><span>d</span> <span>S</span><span>h</span><span>a</span><span>j</span><span>a</span><span>m</span><span>a</span><span>l</span>
+<span>M</span><span>o</span><span>n</span><span>d</span><span>a</span><span>l</span>
+</h1>
+<h2>Islami Bank Nursing College, Rajshahi</h2><img alt="Profile Photo" class="profile-img" src="https://i.supaimg.com/e350f944-696c-4308-94cb-3181efb24f98.jpg"/>
+<div class="info">
+<p><strong>Name:</strong> Md Shajamal Mondal</p>
+<p><strong>Father Name:</strong> Md Ahasan Habib</p>
+<p><strong>Mother Name:</strong> Mst Jahanara Begum</p>
+<p><strong>Brother Name:</strong> Md Ab Rouf</p>
+<p><strong>Address:</strong> Gobindopara, Bagmara, Rajshahi</p>
+<p><strong>Blood Group:</strong> O+(ve)</p>
+</div>
+<div class="folder" id="gallery">
+<h3>📷 Gallery</h3>
+<p>ছবির লিঙ্ক দিন:</p>
+<input id="galleryImg" placeholder="your-photo.jpg" type="text"/>
+<div class="gallery-container"><img alt="Gallery Photo" src="https://i.supaimg.com/d725cfcf-1884-49d0-876a-3bf608cf3cef.jpg"/><img alt="Gallery Photo" src="https://i.supaimg.com/1acfee0e-eae5-42a3-9bfc-9275255e2cb8.jpg"/></div></div>
+<div class="folder" id="about">
+<h3>👤 About Me</h3>
+<textarea id="aboutTxt" rows="6">আমি একজন নার্সিং শিক্ষার্থী। মানুষের সেবাই আমার মূল লক্ষ্য। অসুস্থ ও বিপদগ্রস্ত মানুষের পাশে দাঁড়িয়ে তাদের সুস্থতার জন্য কাজ করাই আমার স্বপ্ন। নার্সিং পেশাকে আমি শুধু চাকরি নয়, বরং মানবতার সেবার একটি মহান দায়িত্ব মনে করি। ভবিষ্যতে একজন দক্ষ নার্স হিসেবে সমাজ ও দেশের জন্য কাজ করতে চাই।</textarea>
+</div>
+<div class="folder" id="projects">
+<h3>💻 Projects</h3>
+<textarea id="projectsTxt" rows="4">আপনার কাজ বা লেখা...</textarea>
+</div>
+<div class="folder" id="notes">
+<h3>📝 Notes / Contact</h3>
+<textarea id="notesTxt" rows="4">এখানে নোট লিখুন...</textarea>
+</div>
+<footer>
+<a href="https://www.instagram.com/shajamal.ig" target="_blank">📷 Instagram</a>
+<a href="http://facebook.com/Shajamal.Editzz" target="_blank">📘 Facebook</a>
+<a href="http://g.co/kgs/mhVSnF" target="_blank">🔎 Google</a>
+<a href="https://wa.me/01326116321" target="_blank">💬 WhatsApp</a>
+</footer>
+<button onclick="saveFile()">💾 Save Website</button>
+<script>
+function saveFile() {
+    let content = `
+<!DOCTYPE html>
+<html lang='en'>
+<head><meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<title>Saved Website</title></head>
+<body>
     <h1>Md Shajamal Mondal</h1>
-    <h2>Islami Bank Nursing College, Rajshahi</h2>
-    <p><strong>Mobile:</strong> 01326116321</p>
-    <p><strong>Email:</strong> <a href="mailto:mrshajamalislam@gmail.com">mrshajamalislam@gmail.com</a></p>
-    <p><strong>Facebook:</strong> <a href="http://facebook.com/Shajamal.Editzz" target="_blank">facebook.com/Shajamal.Editzz</a></p>
-    <p><strong>Instagram:</strong> <a href="https://www.instagram.com/shajamal.ig?igsh=MTRzMnBvbXp1OGh2OQ==" target="_blank">instagram.com/shajamal.ig</a></p>
-    <p><strong>Google:</strong> <a href="http://g.co/kgs/mhVSnF" target="_blank">g.co/kgs/mhVSnF</a></p>
-    <p><em>Everyone pray for me</em></p>
+    <h2>Islami Bank Nursing College, Rajshahi</h2><img src='https://i.supaimg.com/e350f944-696c-4308-94cb-3181efb24f98.jpg' alt='Profile Photo' style='max-width:200px; border-radius:50%;'>
+
+<h3>Personal Info</h3>
+<p>Name: Md Shajamal Mondal</p>
+<p>Father Name: Md Ahasan Habib</p>
+<p>Mother Name: Mst Jahanara Begum</p>
+<p>Brother Name: Md Ab Rouf</p>
+<p>Address: Gobindopara, Bagmara, Rajshahi</p>
+<p>Blood Group: O+(ve)</p>
+
+<h3>📷 Gallery</h3>
+<img src='${document.getElementById('galleryImg').value}' alt='My Photo' style='max-width:200px;'>
+
+<h3>👤 About Me</h3>
+<p>${document.getElementById('aboutTxt').value}</p>
+
+<h3>💻 Projects</h3>
+<p>${document.getElementById('projectsTxt').value}</p>
+
+<h3>📝 Notes / Contact</h3>
+<p>${document.getElementById('notesTxt').value}</p>
+
+<footer>
+    <p>📷 Instagram: instagram.com/shajamal.ig</p>
+    <p>📘 Facebook: facebook.com/Shajamal.Editzz</p>
+    <p>🔎 Google: g.co/kgs/mhVSnF</p>
+    <p>💬 WhatsApp: 01326116321</p>
+</footer>
+
 </body>
+</html>`;let blob = new Blob([content], { type: "text/html" });
+let link = document.createElement("a");
+link.href = URL.createObjectURL(blob);
+link.download = "My_Custom_Website.html";
+link.click();
+
+} </script></body>
+
 </html>
